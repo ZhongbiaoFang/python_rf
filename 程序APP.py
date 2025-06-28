@@ -65,13 +65,13 @@ if st.button("Predict"):
     probability = predicted_proba[predicted_class] * 100
 
     # 显示预测结果，使用 Matplotlib 渲染指定字体
-    text = f"Based on feature values, predicted possibility of AKI is {probability:.2f}%"
+    text = f"Based on feature values, predicted possibility of Infection is {probability:.2f}%"
     fig, ax = plt.subplots(figsize=(8, 1))
     ax.text(
         0.5, 0.5, text,
         fontsize=16,
         ha='center', va='center',
-        fontname='Times New Roman',
+        fontname='Serif',
         transform=ax.transAxes
     )
     ax.axis('off')
